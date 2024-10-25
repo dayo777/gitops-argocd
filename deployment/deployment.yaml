@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zurich-weather-app
+  name: weather-app
   labels:
-    app: zurich-weather-app
+    app: weather-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: zurich-weather-app
+      app: weather-app
   template:
     metadata:
       labels:
-        app: zurich-weather-app
+        app: weather-app
     spec:
       containers:
-      - name: zurich-weather-app
-        image: pietrolibro/zurich-weather-app:1.0
+      - name: weather-app
+        image: dayo777/weather-app:1.0
         ports:
         - containerPort: 8080
         # resources:
