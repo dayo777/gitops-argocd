@@ -23,7 +23,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: src
           file: ./src/dockerfile
           push: true
           tags: dayo777/weather-app:0.1.0
