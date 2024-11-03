@@ -26,4 +26,4 @@ jobs:
           context: src
           file: ./src/dockerfile
           push: true
-          tags: dayo777/weather-app:0.2.0
+          tags: dayo777/weather-app:0.3.0
